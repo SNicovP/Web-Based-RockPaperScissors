@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klip, Papier, Skêr spel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Kom ons speel Klip, Papier, Skêr!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Spel reëls</summary>
+
+        <p>Jy gaan teen n robot speel.</p>
+        <p>Jy kan kies tussen Klip, Papier of Skêr.</p>
+        <p>Die eerste een wat 3 punte kry wen die spel.</p>
+
+        <p>Hierdie is die reëls wat bepaal wie kry n punt:</p>
+        <ul>
+          <li>Klip oorwin Skêr</li>
+          <li>Skêr oorwin Papier</li>
+          <li>Papier oorwin Klip</li>
+        </ul>
+        <p>
+          As die speler en die robot dieselfde keuse maak (Bv. Skêr en Skêr), dan kry niemand 'n punt nie.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Speler Telling: <span class="score" id="player-score">0</span></strong
+        >
+        <strong
+          >Robot Telling: <span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+
+      <section class="options-container">
+        <h2>Kies n Opsie:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Klip</button>
+          <button id="paper-btn" class="btn">Papier</button>
+          <button id="scissors-btn" class="btn">Skêr</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Speel weer?</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
